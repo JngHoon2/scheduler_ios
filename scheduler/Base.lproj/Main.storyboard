@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BGF-Qd-WDH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="kNV-Qk-2jJ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="BGF-Qd-WDH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="55y-od-OjB"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hJz-I1-Yju">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Ct6-Rb-4gf" kind="relationship" relationship="viewControllers" id="vRk-92-elt"/>
+                        <segue destination="fLt-Hb-bna" kind="relationship" relationship="viewControllers" id="G7s-Wi-KEg"/>
+                        <segue destination="cR5-9g-Dgz" kind="relationship" relationship="viewControllers" id="jPZ-9z-fwZ"/>
+                        <segue destination="nrr-AJ-YkF" kind="relationship" relationship="viewControllers" id="EZp-o1-WhA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ghs-CU-44q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1719" y="-88"/>
+        </scene>
+        <!--시간표-->
+        <scene sceneID="urW-MN-Reg">
+            <objects>
+                <viewController id="fLt-Hb-bna" customClass="schedule" customModule="scheduler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a45-9o-fSB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zIJ-tO-ZJR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="시간표" image="pencil" catalog="system" id="VSB-oj-gEt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QlG-cx-NwJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2996" y="-1532"/>
+        </scene>
+        <!--통계-->
+        <scene sceneID="f2x-mk-jgV">
+            <objects>
+                <viewController id="Ct6-Rb-4gf" customClass="chart" customModule="scheduler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y6A-hY-mdy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="g2r-zW-Svd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="통계" id="8hk-Af-GoN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HK6-Qc-em5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2996" y="-549"/>
+        </scene>
+        <!--기록-->
+        <scene sceneID="ejn-Sx-mwn">
+            <objects>
+                <viewController id="cR5-9g-Dgz" customClass="record" customModule="scheduler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CiY-ER-SyS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="XdB-bm-ZFw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="기록" image="book.fill" catalog="system" id="uZf-pm-AlE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s2e-oU-gg2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2996" y="376"/>
+        </scene>
+        <!--설정-->
+        <scene sceneID="FnL-dh-PA9">
+            <objects>
+                <viewController id="nrr-AJ-YkF" customClass="setting" customModule="scheduler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MGg-ll-HO1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="9pS-oY-SEh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="설정" id="se1-Xc-tD8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WDp-3V-4zN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2996" y="1349"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book.fill" catalog="system" width="128" height="95"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
